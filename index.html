@@ -5,5 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form action="/traitment" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Identité et Sécurité</legend>
+        <label for="inscription_web"></label>
+        <input type="hidden" id="inscription_web" name="source" />
+        <label for="name"></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="DUPONT"
+          required
+          autofocus
+        />
+        <label for="mdp"></label>
+        <input type="password" id="mdp" name="mdp" minlength="8" />
+        <label for="pp"></label>
+        <input type="file" id="pp" name="pp" accept=".png, .PNG, .jpg, .JPG" />
+      </fieldset>
+      <fieldset>
+        <legend>Profil et Contact</legend>
+      </fieldset>
+      <fieldset>
+        <legend>Information Professionnelle</legend>
+      </fieldset>
+      <fieldset>
+        <legend>Disponibilité et Finalisation</legend>
+      </fieldset>
+      <fieldset>
+        <legend></legend>
+      </fieldset>
+    </form>
+  </body>
 </html>
