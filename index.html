@@ -9,7 +9,6 @@
     <form action="/traitment" method="post" enctype="multipart/form-data">
       <fieldset>
         <legend>Identité et Sécurité</legend>
-        <label for="inscription_web"></label>
         <input type="hidden" id="inscription_web" name="source" />
         <label for="name">Nom</label>
         <input
@@ -44,7 +43,7 @@
         <input type="number" name="tjm" id="tjm" step="50" />
         <label for="senior">Niveau de séniorité estimé</label>
         <input type="range" name="senior" id="senior" min="1" max="5" />
-        <label for="langue">Langues maîtrisées</label>
+        <label>Langues maîtrisées</label>
         <input
           type="checkbox"
           name="langue"
@@ -52,18 +51,18 @@
           value="fr"
           checked
         />Français
-        <input type="checkbox" name="langue" id="langue" value="uk" />Anglais
-        <input type="checkbox" name="langue" id="langue" value="es" />Espagnol
-        <input type="checkbox" name="langue" id="langue" value="tr" />Turc
-        <label for="statut">Statut juridique</label>
+        <input type="checkbox" name="langue" id="langue1" value="uk" />Anglais
+        <input type="checkbox" name="langue" id="langue2" value="es" />Espagnol
+        <input type="checkbox" name="langue" id="langue3" value="tr" />Turc
+        <label>Statut juridique</label>
         <input
           type="radio"
           name="statut"
-          id="statut"
+          id="statut1"
           value="Auto-entrepreneur"
         />Auto-entrepreneur
-        <input type="radio" name="statut" id="statut" value="SASU" />SASU
-        <input type="radio" name="statut" id="statut" value="EURL" />EURL
+        <input type="radio" name="statut" id="statut2" value="SASU" />SASU
+        <input type="radio" name="statut" id="statut3" value="EURL" />EURL
         <label for="region">Région d'intervention</label>
         <select name="region" id="region">
           <option>Groupe Nord</option>
