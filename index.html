@@ -74,9 +74,33 @@
       </fieldset>
       <fieldset>
         <legend>Disponibilité et Finalisation</legend>
+        <label for="date">Date de disponibilité</label>
+        <input type="date" name="date" id="date" required />
+        <label for="audit">Dernier audit technique</label>
+        <input
+          type="text"
+          name="audit"
+          id="audit"
+          disabled
+          value="Non réalisé"
+        />
+        <label for="motivation">Motivation</label>
+        <textarea
+          rows="8"
+          maxlength="500"
+          id="motivation"
+          name="motivation"
+        ></textarea>
+        <label for="cgu">CGU</label>
+        <input type="checkbox" name="cgu" id="cgu" required />
       </fieldset>
       <fieldset>
-        <legend></legend>
+        <legend>
+          Je sais pas pourquoi ça demande 5 fieldset mais j'ai mis les buttons
+          dedans
+        </legend>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Effacer</button>
       </fieldset>
     </form>
   </body>
