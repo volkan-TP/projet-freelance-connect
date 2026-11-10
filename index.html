@@ -11,7 +11,7 @@
         <legend>Identité et Sécurité</legend>
         <label for="inscription_web"></label>
         <input type="hidden" id="inscription_web" name="source" />
-        <label for="name"></label>
+        <label for="name">Nom</label>
         <input
           type="text"
           name="name"
@@ -20,13 +20,21 @@
           required
           autofocus
         />
-        <label for="mdp"></label>
+        <label for="mdp">Mot de passe</label>
         <input type="password" id="mdp" name="mdp" minlength="8" />
-        <label for="pp"></label>
+        <label for="pp">Photo de profil</label>
         <input type="file" id="pp" name="pp" accept=".png, .PNG, .jpg, .JPG" />
       </fieldset>
       <fieldset>
         <legend>Profil et Contact</legend>
+        <label for="email">Adresse email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="tel">numéro de téléphone</label>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" />
+        <label for="site">Site web ou Portfolio</label>
+        <input type="url" name="site" id="site" />
+        <label for="couleur"></label>
+        <input type="color" name="couleur" id="couleur" value="#8BB196" />
       </fieldset>
       <fieldset>
         <legend>Information Professionnelle</legend>
